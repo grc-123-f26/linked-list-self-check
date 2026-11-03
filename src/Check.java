@@ -12,6 +12,39 @@ public class Check {
      * @return "even", "odd", or "equal" depending on whether there are more even or odd values
      */
     public static String evenOdd(ListNode head) {
-        return null;
+        if (head == null) {
+            return "equal";
+        }
+
+        int evenCount = 0;
+        int oddCount = 0;
+
+        ListNode current = head;
+
+        while (current != null) {
+            if (current.data % 2 == 0) {
+                evenCount++;
+            }
+            else {
+                oddCount++;
+            }
+            current = current.next;
+        }
+
+        if (evenCount > oddCount) {
+            return "even";
+        }
+        if (evenCount == oddCount) {
+            return "equal";
+        } else {
+            return "odd";
+        }
     }
+
+    /*
+    I did not finish within the 10 minutes, more like in ~15 minutes.
+
+    I only struggled on remembering how to check for an even and odd number, so I checked online.
+    Afterwards, it was pretty straighforward, nothing else was looked up.
+     */
 }
