@@ -12,6 +12,8 @@ public class Check {
      * @return "even", "odd", or "equal" depending on whether there are more even or odd values
      */
     public static String evenOdd(ListNode head) {
-        return null;
+        // 1. Is the list empty? >> null
+        // 2. Iterate & count num of even/odd values
+        // 3. If more even, return even. More odd, return odd, else return equal.
     }
 }
